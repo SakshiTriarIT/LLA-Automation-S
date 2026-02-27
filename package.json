@@ -1,0 +1,18 @@
+{
+  "name": "salesforce-playwright-login",
+  "version": "1.0.0",
+  "description": "Salesforce login with session cookie persistence (avoids OTP on reuse)",
+  "type": "module",
+  "scripts": {
+    "login": "node src/scripts/salesforce-login.js",
+    "login:headed": "node src/scripts/salesforce-login.js --headed",
+    "login:debug": "node src/scripts/salesforce-login.js --headed --debug",
+    "test:b2b": "playwright test tests/b2b-flow.spec.js"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.58.2",
+    "dotenv": "^16.3.1",
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.40.0"
+  }
+}
